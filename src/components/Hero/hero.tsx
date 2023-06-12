@@ -1,31 +1,36 @@
 import type { Component } from "solid-js";
 
-const Hero: Component = () => {
+import "./hero.css";
+import clsx from "clsx";
+
+interface HeroProps {
+  class?: string;
+}
+
+const Hero: Component<HeroProps> = (props) => {
   return (
-    <div class="container">
-      <div class="mb-16 flex flex-row items-center gap-16">
-        <p class="px-10 py-4 rounded-full bg-very-dark-blue font-condensed text-badge text-white uppercase">
-          NEW
-        </p>
-        <p class="font-condensed text-overline-lg text-very-dark-blue/50 uppercase">
+    <section class={clsx(props.class, "hero container")}>
+      <div class="hero__row">
+        <p class="hero__badge text text--condensed text--badge">NEW</p>
+        <p class="hero__overline text text--condensed text--overline-lg">
           MONOGRAPH DASHBOARD
         </p>
       </div>
-      <h1 class="mb-16 font-condensed text-heading text-very-dark-blue uppercase">
+      <h1 class="hero__title text text--condensed text--heading">
         POWERFUL INSIGHTS INTO YOUR TEAM
       </h1>
-      <p class="mb-27 text-body text-very-dark-blue/75">
+      <p class="hero__subtitle text text--sans text--body">
         Project planning and time tracking for agile teams
       </p>
-      <div class="flex flex-row items-center gap-16">
-        <button class="px-24 py-12 bg-red rounded-button font-condensed text-button text-white uppercase">
-          SCHEDULE A DEMO
+      <div class="hero__row">
+        <button class="hero__button">
+          <span class="text text--condensed text--button">SCHEDULE A DEMO</span>
         </button>
-        <p class="font-condensed text-overline-md text-very-dark-blue/50">
+        <p class="hero__button-description text text--condensed text--overline-md">
           TO SEE A PREVIEW
         </p>
       </div>
-    </div>
+    </section>
   );
 };
 

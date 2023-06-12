@@ -1,0 +1,21 @@
+.app__header {
+  position: absolute;
+  z-index: 100;
+  top: 38px;
+  left: 0;
+  width: 100%;
+}
+
+.app__main {
+  display: flex;
+  flex-direction: column;
+}
+
+.app__hero {
+  order: 2;
+}
+
+.app__illustration {
+  order: 1;
+  margin-bottom: 27px;
+}

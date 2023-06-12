@@ -1,6 +1,10 @@
 import type { Component } from "solid-js";
 
-const Logo: Component = () => {
+interface LogoProps {
+  class?: string;
+}
+
+const Logo: Component<LogoProps> = () => {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32">
       <g fill="#323334" fill-rule="evenodd">

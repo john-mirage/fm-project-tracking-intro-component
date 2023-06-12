@@ -1,3 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url("@styles/colors.css");
+@import url("@styles/globals.css");
+
+@import url("@styles/components/text.css");
+@import url("@styles/components/container.css");
+@import url("@styles/components/page.css");

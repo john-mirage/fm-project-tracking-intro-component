@@ -1,0 +1,10 @@
+.header__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__menu-button {
+  margin-right: -8px;
+}

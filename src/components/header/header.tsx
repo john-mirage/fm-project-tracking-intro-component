@@ -1,7 +1,8 @@
+import "./header.css";
 import Logo from "@components/logo";
 import type { Component } from "solid-js";
 import clsx from "clsx";
-import IconButton from "@components/icon-button";
+import MenuButton from "@components/menu-button";
 
 interface HeaderProps {
   class: string;
@@ -9,10 +10,10 @@ interface HeaderProps {
 
 const Header: Component<HeaderProps> = (props) => {
   return (
-    <header class={clsx(props.class)}>
-      <div class="container flex flex-row justify-between items-center">
-        <Logo />
-        <IconButton class="-mr-8" />
+    <header class={clsx("header", props.class)}>
+      <div class="header__container container">
+        <Logo class="header__logo" />
+        <MenuButton class="header__menu-button" />
       </div>
     </header>
   );
