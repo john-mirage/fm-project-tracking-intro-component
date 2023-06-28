@@ -8,3 +8,10 @@
 .header__menu-button {
   margin-right: -8px;
 }
+
+.header__menu {
+  margin-top: 38px;
+  position: absolute;
+  right: 32px;
+  left: 32px;
+}

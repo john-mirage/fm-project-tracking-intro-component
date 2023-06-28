@@ -1,0 +1,35 @@
+.navigation {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .navigation__link {
+    text-decoration: none;
+    color: var(--color-very-dark-blue);
+  }
+
+  .navigation__link--faded {
+    opacity: 50%;
+  }
+
+  .navigation__separator {
+    width: 6px;
+    height: 6px;
+    border-radius: 9999px;
+    background-color: var(--color-very-dark-blue);
+    opacity: 15%;
+  }
+}
+
+@media screen and (hover: hover) {
+  .navigation__link:hover {
+    text-decoration: underline;
+  }
+}

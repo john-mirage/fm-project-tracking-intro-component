@@ -19,3 +19,9 @@
   order: 1;
   margin-bottom: 27px;
 }
+
+@media screen and (min-width: 1174px) {
+  .app__hero {
+    margin-top: 258px;
+  }
+}

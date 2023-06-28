@@ -23,7 +23,7 @@
   background-image: url("@images/illustration-devices.svg");
   background-repeat: no-repeat;
   background-position: left top 126px;
-  background-size: 482px auto;
+  background-size: 516px auto;
 }
 
 @media screen and (min-width: 520px) {
@@ -39,5 +39,21 @@
 
   .illustration__devices {
     background-size: 568px auto;
+  }
+}
+
+@media screen and (min-width: 1174px) {
+  .illustration {
+    position: absolute;
+    height: 675px;
+  }
+  .illustration__shape {
+    height: 427px;
+  }
+  .illustration__devices {
+    position: absolute;
+    left: calc(50% + 57px);
+    background-position: left bottom;
+    background-size: 916px 455px;
   }
 }
